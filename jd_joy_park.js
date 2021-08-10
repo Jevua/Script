@@ -72,12 +72,8 @@ message = ""
             $.activityJoyList = []
             $.workJoyInfoList = []
             await getJoyList(true);
-            await getGameShopList()
             //清理工位
             await doJoyMoveDownAll($.workJoyInfoList)
-            //从低合到高
-            await doJoyMergeAll($.activityJoyList)
-            await getJoyList(true)
         }
     }
 })()
